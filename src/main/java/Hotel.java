@@ -13,4 +13,8 @@ public class Hotel {
     public void checkGuestIn(Guest guest, Room room){
         room.checkGuestIntoRoom(guest);
     }
+
+    public Booking makeNewBooking(Bedroom bedroom, int nights) {
+        return new Booking(bedroom, nights);
+    }
 }
